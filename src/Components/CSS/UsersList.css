@@ -1,0 +1,54 @@
+.readOnly {
+  border: none;
+  width: 90%;
+  text-overflow: ellipsis;
+}
+.selectedchange {
+  background-color: rgb(226, 235, 240);
+  .readOnly {
+    background-color: rgb(226, 235, 240);
+  }
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+  align-items: center;
+}
+.icons * {
+  padding: 2px;
+  margin-right: 10%;
+  cursor: pointer;
+}
+.table tr:hover {
+  background-color: aquamarine;
+  .readOnly {
+    background-color: aquamarine;
+  }
+}
+
+/* hover CSS for edit and delete and save icon */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 50px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
